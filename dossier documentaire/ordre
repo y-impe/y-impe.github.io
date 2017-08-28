@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ordre du dossier documentaire</title>
+  </head>
+  <body>
+    <h1>Ordre du dossier documentaire</h1>
+    <p>J'ai pensé le dossier documentaire de la façon suivante : </p>
+    <ul>
+      <li><a>Tout d'abord, il fallait faire quelques définitions, afin de bien cerné les trois concpets principaux du sujet, ici, le SKOS en lui-même, le RDF, qui est en lien fort avec le SKOS, et le W3C, créateur de ces deux derniers.</a></li>
+      <li><a>Ensuite, le renvoi vers le site officiel de SKOS me semblait nécessaire, afin d'envoyer tout de suite les gens vers la source la plus fidèle pour le SKOS, en allant vers les créateurs. Les gens peuvent aller par eux-même voir les informations à la source s'ils le veulent.</a></li>
+      <li><a>Après, j'ai rassemblé des documents expliquant le contexte de la création de ce SKOS, afin d'avoir des informations sur l'utilité de celui-ci avant d'avoir des informations plus précise et technique</a></li>
+      <li><a>Vient ensuite les documents concernant les aspects plus techniques du SKOS. Beaucoup servent d'introduction à ce modèle, mais il y a également le document de référence du W3C sur leur création, qui décrit de manière complète ce modèle.</a></li>
+      <li><a>Enfin, j'ai montré des liens entre le SKOS et d'autres standards.</a></li>
+    <p>Ces différents point étaient plus théoriques et montraient de manières croissantes les fonctionnalités du SKOS.</p>
+    <p>Je suis ensuite passée à une partie plus pratique, ou en tout cas plus "visuelle" en montrant des exemples d'applications.</p>
+    <ul>
+      <li><a>Une liste de logiciels a été présentée.</a></li>
+      <li><a>Une liste de projets similaires a également été présentée. Les études de cas sont toujours utiles pour voir de manière concrète comment fonctionne un modèle.</a></li>
+      <li><a>Enfin, un tutoriel a été présenté</a></li>
+    <p>Il m'a semblé judicieux de commencer par une partie plus théorique avant de passer à un côté pratique. Comprendre la base du SKOS, con utilité théorique avant de voir pratiquement ce que cela donne.</p>
+  </body>
+</html>
