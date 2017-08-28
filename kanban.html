@@ -1,0 +1,132 @@
+<!DOCTYPE html><html><head><title>Feuille de calcul sans titre</title><meta name="viewport" content="target-densitydpi=device-dpi,user-scalable=1,minimum-scale=1,maximum-scale=2.5,initial-scale=1,width=device-width"><link href='/static/spreadsheets2/client/css/1909374374-waffle_k_ltr.css' type='text/css' rel='stylesheet'><style type="text/css">
+        html { overflow: visible; }
+        #sheets-viewport { overflow: auto; }
+        #sheets-viewport.widget-viewport { overflow: hidden; }
+        .grid-container { overflow: visible; background: white;}
+        .grid-table-container { overflow: visible; }
+        #top-bar {
+          background: url("//ssl.gstatic.com/docs/spreadsheets/publishheader.png") repeat-x bottom;
+          margin: 0;
+          overflow: hidden;
+        }
+        #top-bar {
+          border-bottom: 1px solid #ccc;
+          padding: 6px 6px 0;
+        }
+        #doc-title { padding-bottom: 5px; }
+        #doc-title .name { font-size: 15px; }
+        #sheet-menu {
+          font-size: 13px;
+          margin: 6px 0 0;
+          padding: 0 0 5px;
+        }
+        #sheet-menu li {
+          display: inline;
+          list-style-type: none;
+          margin: 0;
+          padding: 5px 8px;
+        }
+        #sheet-menu li.active {
+          background-color: #fff;
+          font-weight: bold;
+          border: 1px solid #999;
+        }
+        #top-bar #sheet-menu li.active {
+          border-bottom: 0;
+        }
+        #sheet-menu a, #sheet-menu a:visited { color: #07c; }
+        #footer {
+          background: #f0f0f0;
+          border-top: 1px #ccc solid;
+          border-bottom: 1px #ccc solid;
+          font-size: 13;
+          padding: 10px 10px;
+        }
+        .dash {
+          padding: 0 6px;
+        }
+        .ritz .waffle a { color: inherit; }.ritz .waffle .s0{background-color:#ffffff;text-align:center;font-weight:bold;font-style:italic;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}.ritz .waffle .s1{background-color:#ffffff;text-align:left;color:#000000;font-family:'Arial';font-size:10pt;vertical-align:bottom;white-space:nowrap;direction:ltr;padding:2px 3px 2px 3px;}</style><script type="text/javascript">
+        var activeSheetId;
+
+        function switchToSheet(id) {
+          if (document.getElementById('sheet-menu')) {
+            document.getElementById('sheet-button-' + activeSheetId)
+                .className = '';
+            document.getElementById('sheet-button-' + id).className = 'active';
+          }
+
+          document.getElementById(activeSheetId).style.display = 'none';
+          document.getElementById(id).style.display = '';
+          activeSheetId = id;
+
+          // posObjs() is defined in embeddedObjectJs (see EmbeddedObjectHtmlBuilder.java)
+          posObjs();
+          return false;
+        }
+        
+        function init() {
+        var optPageSwitcher;
+        
+        function resize() {
+          var optMobileWebHeader = document.getElementById('docs-ml-header-id');
+          var optTopBar = document.getElementById('top-bar');
+          var optFooter = document.getElementById('footer');
+          var sheetsViewport = document.getElementById('sheets-viewport');
+
+          if (optMobileWebHeader) {
+            sheetsViewport.style.marginTop = optMobileWebHeader.offsetHeight +
+                (optTopBar ? optTopBar.offsetHeight : 0) + 'px';
+          }
+          var adjustedHeight = window.innerHeight -
+              (optTopBar ? optTopBar.offsetHeight : 0) -
+              (optFooter ? optFooter.offsetHeight : 0);
+          var adjustedWidth = window.innerWidth;
+          sheetsViewport.style.width = (adjustedWidth + 'px');
+          sheetsViewport.style.height = (adjustedHeight + 'px');
+          if (optPageSwitcher) {
+            optPageSwitcher.resize(adjustedWidth, adjustedHeight);
+          }
+        }
+        resize();
+        window.onresize = resize;
+        }
+        </script><script>_docs_flag_initialData={"docs-mwid":true,"docs-smheo":true,"info_params":{"token":"AC4w5VjcVBgGIu8P-OTBktLyt7mdU9YHCQ:1503951377739","includes_info_params":true},"ilcm":{"eui":"ADFN-cvhL4UIJ7iFZz28HRwMzWu7n8_WD8_2oW4qrWRAbaCrSTVXmz0nmpIyr9nKZhs2VpryKZa0","je":1,"sstu":1503951377853000,"si":"CMjUi73f-tUCFeI6yAod8QcCDA","ei":[5701300,5700057,5700100,5700592,5700105,5700333,5700559,5700680,5701433,5701534,5701352,5700752,5701844,5700386,5700990,5701172,5700658,5701999,5701014,5701062,5700258,5701753,5701889,5700567,5700250,5700362,5700571,5701200,5701348,5701610,5700994,5700266,5701853,5700650,5700505,5700608,5700788,5700668,5701067,5700810,5700998,5700130,5701022,5700446,5701356,5700547,5700016,5701911,5700208,5700982,5701627,5700410,5700127,5700213,5700103,5700298,5700551,5701500,5701304,5700941,5700876,5701054,5700286,5700422,5700535,5701220,5701602,5700944,5701127,5700028,5700058,5701536,5700796,5700684,5700908,5701376,5700588,5701804,5700042,5700937,5700933,5700180,5701075,5700019]},"drive_url":"//drive.google.com?authuser\u003d0\u0026usp\u003dsheets_web","docs-sup":"/spreadsheets"}; _docs_flag_cek= null ;</script></head><script>document.addEventListener('DOMContentLoaded', init);</script><body><div id="top-bar"><div id="doc-title"><span class="name">Feuille de calcul sans titre : Feuille 1</span></div></div><div id="sheets-viewport"><div id="0" style="display:none;position:relative;" dir="ltr"><div class="ritz grid-container" dir="ltr"><table class="waffle" cellspacing="0" cellpadding="0"><thead><tr><th class="row-header freezebar-origin-ltr header-shim row-header-shim"></th><th id="0C0" style="width:317px" class="header-shim"></th><th id="0C1" style="width:100px" class="header-shim"></th><th id="0C2" style="width:100px" class="header-shim"></th><th id="0C3" style="width:100px" class="header-shim"></th><th id="0C4" style="width:100px" class="header-shim"></th></tr></thead><tbody><tr style='height:20px;'><th id="0R0" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">1</div></th><td class="s0" dir="ltr">Tâches</td><td class="s0" dir="ltr">Prêt</td><td class="s0" dir="ltr">En cours</td><td class="s0" dir="ltr">En attente</td><td class="s0" dir="ltr">Terminé</td></tr><tr style='height:20px;'><th id="0R1" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">2</div></th><td class="s1" dir="ltr">Lire les consignes du projet</td><td class="s1" dir="ltr">15/08 à 17:00</td><td class="s1" dir="ltr">15/08 à 17:00</td><td></td><td class="s1" dir="ltr">15/08 à 17:30</td></tr><tr style='height:20px;'><th id="0R2" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">3</div></th><td class="s1" dir="ltr">Lire les questions essentielles</td><td class="s1" dir="ltr">17/08 à 18:00</td><td class="s1" dir="ltr">17/08 à 18:00</td><td></td><td class="s1" dir="ltr">17/08 à 18:20</td></tr><tr style='height:20px;'><th id="0R3" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">4</div></th><td class="s1" dir="ltr">Choisir les deux questions</td><td class="s1" dir="ltr">17/08 à 18:20</td><td class="s1" dir="ltr">17/08 à 18:20</td><td></td><td class="s1" dir="ltr">17/08 à 18:25</td></tr><tr style='height:20px;'><th id="0R4" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">5</div></th><td class="s1" dir="ltr">S&#39;informer sur la question 1</td><td class="s1" dir="ltr">24/08 à 08:00</td><td class="s1" dir="ltr">24/08 à 08:10</td><td></td><td class="s1" dir="ltr">24/08 à 10:30</td></tr><tr style='height:20px;'><th id="0R5" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">6</div></th><td class="s1" dir="ltr">S&#39;informer sur la question 2</td><td class="s1" dir="ltr">24/08 à 08:00</td><td class="s1" dir="ltr">24/08 à 16:10</td><td></td><td class="s1" dir="ltr">24/08 à 17:45</td></tr><tr style='height:20px;'><th id="0R6" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">7</div></th><td class="s1" dir="ltr">Répondre à la question 1</td><td class="s1" dir="ltr">24/08 à 08:00</td><td class="s1" dir="ltr">24/08 à 10:30</td><td></td><td class="s1" dir="ltr">24/08 à 13:00</td></tr><tr style='height:20px;'><th id="0R7" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">8</div></th><td class="s1" dir="ltr">Répondre à la question 2</td><td class="s1" dir="ltr">24/08 à 08:00</td><td class="s1" dir="ltr">24/08 à 18:00</td><td></td><td class="s1" dir="ltr">24/08 à 19:15</td></tr><tr style='height:20px;'><th id="0R8" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">9</div></th><td class="s1 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 314px; left: -1px;">Rédiger les différentes parties du cahier des charges</div></td><td class="s1" dir="ltr">25/08 à 08:00</td><td class="s1" dir="ltr">25/08 à 08:00</td><td></td><td class="s1" dir="ltr">27/08 à 17:45</td></tr><tr style='height:20px;'><th id="0R9" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">10</div></th><td class="s1" dir="ltr">Besoins fonctionnels</td><td class="s1" dir="ltr">25/08 à 08:00</td><td class="s1" dir="ltr">25/08 à 08:00</td><td class="s1" dir="ltr">25/08 à 8:30</td><td class="s1" dir="ltr"></td></tr><tr style='height:20px;'><th id="0R10" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">11</div></th><td class="s1" dir="ltr"></td><td></td><td class="s1" dir="ltr">25/08 à 15:00</td><td></td><td class="s1" dir="ltr">25/08 à 16:00</td></tr><tr style='height:20px;'><th id="0R11" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">12</div></th><td class="s1" dir="ltr">Calendrier</td><td class="s1" dir="ltr">25/08 à 08:00</td><td class="s1" dir="ltr">25/08 à 16:30</td><td></td><td class="s1" dir="ltr">25/08 à 17:00</td></tr><tr style='height:20px;'><th id="0R12" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">13</div></th><td class="s1" dir="ltr">Objectifs</td><td class="s1" dir="ltr">25/08 à 08:00</td><td class="s1" dir="ltr">26/08 à 08:00</td><td></td><td class="s1" dir="ltr">26/08 à 08:15</td></tr><tr style='height:20px;'><th id="0R13" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">14</div></th><td class="s1" dir="ltr">Budget</td><td class="s1" dir="ltr">25/08 à 08:00</td><td class="s1" dir="ltr">26/08 à 08:20</td><td></td><td class="s1" dir="ltr">26/08 à 08:30</td></tr><tr style='height:20px;'><th id="0R14" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">15</div></th><td class="s1" dir="ltr">Etude de l&#39;existant</td><td class="s1" dir="ltr">25/08 à 08:00</td><td class="s1" dir="ltr">27/08 à 08:00</td><td></td><td class="s1" dir="ltr">27/08 à 09:00</td></tr><tr style='height:20px;'><th id="0R15" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">16</div></th><td class="s1" dir="ltr">Outils</td><td class="s1" dir="ltr">25/08 à 08:00</td><td class="s1" dir="ltr">27/08 à 12:00</td><td></td><td class="s1" dir="ltr">27/08 à 13:00</td></tr><tr style='height:20px;'><th id="0R16" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">17</div></th><td class="s1" dir="ltr">Contraintes</td><td class="s1" dir="ltr">25/08 à 08:00</td><td class="s1" dir="ltr">25/08 à 09:00</td><td class="s1" dir="ltr">25/08 à 10:00</td><td class="s1" dir="ltr"></td></tr><tr style='height:20px;'><th id="0R17" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">18</div></th><td class="s1" dir="ltr"></td><td class="s1" dir="ltr"></td><td class="s1" dir="ltr">27/08 à 14:00</td><td></td><td class="s1" dir="ltr">27/08 à 14:30</td></tr><tr style='height:20px;'><th id="0R18" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">19</div></th><td class="s1" dir="ltr">S&#39;informer sur le SKO</td><td class="s1" dir="ltr">24/08 à 10:00</td><td class="s1" dir="ltr">24/08 à 10:00</td><td></td><td class="s1" dir="ltr">28/08 à 17:00</td></tr><tr style='height:20px;'><th id="0R19" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">20</div></th><td class="s1 softmerge" dir="ltr"><div class="softmerge-inner" style="width: 314px; left: -1px;">Rassembler l&#39;information importantes sur le SKOS</div></td><td class="s1" dir="ltr">24/08 à 10:00</td><td class="s1" dir="ltr">24/08 à 10:00</td><td class="s1" dir="ltr">24/08 à 11:00</td><td></td></tr><tr style='height:20px;'><th id="0R20" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">21</div></th><td class="s1" dir="ltr"></td><td class="s1" dir="ltr"></td><td class="s1" dir="ltr">24/08 à 15:00</td><td class="s1" dir="ltr">24/08 à 16:00</td><td></td></tr><tr style='height:20px;'><th id="0R21" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">22</div></th><td class="s1" dir="ltr"></td><td class="s1" dir="ltr"></td><td class="s1" dir="ltr">25/08 à 10:00</td><td></td><td class="s1" dir="ltr">25/08 à 13:00</td></tr><tr style='height:20px;'><th id="0R22" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">23</div></th><td class="s1" dir="ltr">Organiser le dossier documentaire SKOS</td><td class="s1" dir="ltr">24/08 à 10:00</td><td class="s1" dir="ltr">25/08 à 08:00</td><td class="s1" dir="ltr">25/08 à 09:00</td><td></td></tr><tr style='height:20px;'><th id="0R23" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">24</div></th><td class="s1" dir="ltr"></td><td></td><td class="s1" dir="ltr">27/08 à 18:00</td><td></td><td class="s1" dir="ltr">27/08 à 21:00</td></tr><tr style='height:20px;'><th id="0R24" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">25</div></th><td class="s1" dir="ltr">Créer un compte Github</td><td class="s1" dir="ltr">28/08 à 08:00</td><td class="s1" dir="ltr">28/08 à 08:00</td><td></td><td class="s1" dir="ltr">28/08 à 08:05</td></tr><tr style='height:20px;'><th id="0R25" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">26</div></th><td class="s1" dir="ltr">Voir le fonctionnement de github</td><td class="s1" dir="ltr">28/08 à 08:00</td><td class="s1" dir="ltr">28/08 à 08:10</td><td></td><td class="s1" dir="ltr">28/08 à 08:45</td></tr><tr style='height:20px;'><th id="0R26" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">27</div></th><td class="s1" dir="ltr">Créer le site</td><td class="s1" dir="ltr">28/08 à 08:00</td><td class="s1" dir="ltr">28/08 à 08:50</td><td></td><td class="s1" dir="ltr">28/08 à 08:55</td></tr><tr style='height:20px;'><th id="0R27" style="height: 20px;" class="row-headers-background row-header-shim"><div class="row-header-wrapper" style="line-height: 20px;">28</div></th><td class="s1" dir="ltr">Ajouter le contenu sur le site</td><td class="s1" dir="ltr">28/08 à 08:00</td><td class="s1" dir="ltr">28/08 à 13:00</td><td></td><td class="s1" dir="ltr">28/08 à 22:00</td></tr></tbody></table></div></div></div><div id="footer"><span>Published by <a target="_blank" title="Learn more about Google Sheets" href="https://docs.google.com/spreadsheets/?authuser=0&amp;usp=sheets_web">Google Sheets</a></span><span class="dash">&ndash;</span><a href="https://docs.google.com/abuse?id=e/2PACX-1vR-n3McncMZ5vn55wEXsy2uhDGFOpGvLn86meKcczw9k7UIgngA4jVNlrLg9EfuluYURJ5-w3FSH595">Signaler un cas d'utilisation abusive
+</a><span class="dash">&ndash;</span><span>Mise à jour automatique effectuée toutes les 5 minutes</span></div>
+<script type='text/javascript' nonce='xZrkAW3PAo6ci5nn9nw2JPfSu1Q'>
+function posObj(sheet, id, row, col, x, y) {
+  var rtl = false;
+  var sheetElement = document.getElementById(sheet);
+  if (!sheetElement) {
+    sheetElement = document.getElementById(sheet + '-grid-container');
+  }
+  if (sheetElement) {
+    rtl = sheetElement.getAttribute('dir') == 'rtl';
+  }
+  var r = document.getElementById(sheet+'R'+row);
+  var c = document.getElementById(sheet+'C'+col);
+  if (r && c) {
+    var objElement = document.getElementById(id);
+    var s = objElement.style;
+    var t = y;
+    while (r && r != sheetElement) {
+      t += r.offsetTop;
+      r = r.offsetParent;
+    }
+    var offsetX = x;
+    while (c && c != sheetElement) {
+      offsetX += c.offsetLeft;
+      c = c.offsetParent;
+    }
+    if (rtl) {
+      offsetX -= objElement.offsetWidth;
+    }
+    s.left = offsetX + 'px';
+    s.top = t + 'px';
+    s.display = 'block';
+    s.border = '1px solid #000000';
+  }
+};
+function posObjs() {
+};
+posObjs();</script>
+<script type="text/javascript">activeSheetId = '0'; switchToSheet('0');</script></body></html>
